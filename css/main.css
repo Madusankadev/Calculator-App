@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #010101;
+    --darkScreenBg: #232D36;
+    --darkKeyBg: #25313D;
+    --gray: #949EA9;
+
+    --lightKeyWhite: #D4D4D2;
+    --lightKeYgRAY: #505050;
+    --yellow: #FF9500;
+
+    --darkKeyWhite: #D4D4D2;
+    --darkKeyGray: #505050;
+}
+
+.container {
+    width: calc(100% - 2rem);
+    max-width: 600px;
+    margin-inline: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+body {
+
+}
+
+.calBox {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.calItemBox {
+   
+}
+
+.modeChange {
+    grid-column: span 4;
+    padding: 1rem;
+}
+
+.modIcon {
+    cursor: pointer;
+}
+
+.histryViewBox {
+    grid-column: span 4;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.histryViewBox p {
+    text-align: right;
+    font-weight: 500;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.valueBox {
+    grid-column: span 4;
+
+}
+
+.value {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 2.4rem;
+    text-align: right;
+    font-weight: 700;
+    padding-top: 0;
+}
+
+.value:active {
+    border: none;
+    outline: none;
+}
+
+.btnSection {
+    display: grid;
+    width: calc(100% - 2rem);
+    margin-inline: auto;
+    grid-template-columns: auto auto auto auto;
+}
+
+.btn {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    border-radius: 60px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.btn button:hover {
+    box-shadow: 5px 10px 15px rgba(24, 24, 24, .3);
+}
+
+.btnEqual {
+    grid-row: span 2;
+}
+
+.btnEqual button {
+    height: 120px;
+}
+
+.yellowBtn {
+    background: var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grayBtn {
+    background: var(--lightKeYgRAY);
+}
+
+.opBtn {
+    background: var(--lightKeyWhite);
+}
+
+@media screen and (max-width: 400px) {
+    .btn button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+    .btnEqual button {
+        height: 100px;
+    }
+}
