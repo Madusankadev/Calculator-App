@@ -87,10 +87,11 @@ body {
     width: calc(100% - 2rem);
     margin-inline: auto;
     grid-template-columns: auto auto auto auto;
+    border-radius: 22px;
 }
 
 .btn {
-    padding: 1rem;
+    padding: .7rem ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,4 +149,8 @@ body {
     .btnEqual button {
         height: 120px;
     }
+}
+
+.new {
+    color: var(--black);
 }

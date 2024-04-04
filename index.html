@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/font.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="container calBox">
       <div class="calItemBox modeChange">
-        <img src="./icon/dark.png" alt="mode change" width="36" height="36" class="modIcon" />
+        <img src="./icon/dark.png" alt="mode change" width="36" height="36" class="modIcon light" id="modIcon"  onclick="changeMode()"/>
       </div>
       <div class="calItemBox histryViewBox">
         <p>12+56/4</p>
       </div>
       <div class="calItemBox valueBox">
-        <input type="text" class="value" />
+        <input type="text" class="value" id="value" />
       </div>
     </div>
-    <div class="btnSection container">
+    <div class="btnSection container" id="btnSection">
       <div class="calItemBox btn">
-        <button class="opBtn">%</button>
+        <button class="opBtn" id>%</button>
       </div>
       <div class="calItemBox btn">
         <button class="opBtn">x</button>
@@ -78,5 +78,7 @@
         <button class="grayBtn">.</button>
       </div>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
